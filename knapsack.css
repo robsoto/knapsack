@@ -1,0 +1,11 @@
+#containers > div {
+	display: inline-block;
+	border: 1px solid;
+	height: 300px;
+	margin: 10px;
+}
+
+img {
+	display: inline-block;	
+	max-height: 40%;
+}
