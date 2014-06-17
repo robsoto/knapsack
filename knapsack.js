@@ -1,6 +1,9 @@
+//called in moveItem to check that weightLimit is not exceeded
 function validWeight($elem) {
-	var newWeight = $elem.attr('data-weight') + knapsackWeight;
-	if (newWeight <= 20) {
+	var itemWeight = parseInt($elem.find('img').attr('data-weight'));
+	var newWeight = itemWeight + knapsackWeight;
+
+	if (newWeight <= weightLimit) {
 		return true;	
 	}
 	else {
@@ -9,23 +12,29 @@ function validWeight($elem) {
 }
 
 function moveItem($elem) {
-	//if (validWeight($elem)) {
-		if ($elem.attr('data-location') == 'house') {
+    var itemWeight = parseInt($elem.find('img').attr('data-weight'));
+	
+	//house to knapsack
+	if ($elem.attr('data-location') == 'house') {
+		if (validWeight($elem)) {
 			$elem.attr('data-location', 'knapsack');
 			$('#knapsack').append($elem);
-			knapsackWeight += $elem.attr('data-weight');
+			knapsackWeight += itemWeight;
+			console.log(knapsackWeight)
 		}
-		else {
-			$elem.attr('data-location', 'house');
-			$('#house').append($elem);
-			knapsackWeight -= $elem.attr('data-weight');
-		}
-	//}
+	}
+	//knapsack to house
+	else {
+		$elem.attr('data-location', 'house');
+		$('#house').append($elem);
+		knapsackWeight -= itemWeight;
+	}
 }
 
 $(document).ready(function() {
 	//initialize variables
 	knapsackWeight = 0;
+	weightLimit = 20;
 	var items = $('.item');
 	items.attr('data-location', 'house');
 	
