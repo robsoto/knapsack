@@ -1,11 +1,23 @@
-#containers > div {
+.col-md-6 {
 	display: inline-block;
 	border: 1px solid;
 	height: 300px;
 	margin: 10px;
 }
 
+div {
+	display: inline-block;
+}
+
 img {
 	display: inline-block;	
-	max-height: 40%;
+	height: 120px;
+}
+
+figure {
+	display: inline-block;
+}
+
+figcaption {
+	text-align: center;
 }
