@@ -1,14 +1,8 @@
-//called in moveItem to check that weightLimit is not exceeded
 function validWeight($elem) {
 	var itemWeight = parseInt($elem.find('img').attr('data-weight'));
 	var newWeight = itemWeight + knapsackWeight;
 
-	if (newWeight <= weightLimit) {
-		return true;	
-	}
-	else {
-		return false;	
-	}
+	return (newWeight <= weightLimit) 
 }
 
 function moveItem($elem) {
@@ -20,7 +14,6 @@ function moveItem($elem) {
 			$elem.attr('data-location', 'knapsack');
 			$('#knapsack').append($elem);
 			knapsackWeight += itemWeight;
-			console.log(knapsackWeight)
 		}
 	}
 	//knapsack to house
@@ -41,5 +34,6 @@ $(document).ready(function() {
 	//move items on click
 	items.click(function(e) {
 		moveItem($(this));
+		console.log('click');
 	});
 });
