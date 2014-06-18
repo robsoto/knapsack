@@ -6,8 +6,21 @@
 	margin: 10px;
 }
 
+.containers > * {
+	vertical-align: middle;
+}
+
 containers {
 	height: 320px;
+}
+
+#display {
+	width: 100px;
+	border: 0px;
+}
+
+#display > button {
+	
 }
 
 #burglar {
@@ -16,16 +29,22 @@ containers {
 }
 
 #mansion {
-	padding-left: 100px;
+	padding-left: 250px;
+	height: 100px;
 }
 
-img {	
+img {
+ 	height: 100px;
 	display: inline-block;
-	height: 100px;
 }
 
 div {
 	display: inline-block;
+}
+
+#knapsackContents {
+	border: 0px;
+	width: 100px;
 }
 
 #locations {
