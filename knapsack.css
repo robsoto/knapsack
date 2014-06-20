@@ -5,6 +5,7 @@
 	width: 225px;
 	margin: 10px;
 	margin-right: 1px;
+	margin-bottom: 1px;
 }
 
 #knapsack {
@@ -59,7 +60,6 @@ div {
 #knapsackContents {
 	border: 0px;
 	width: 90px;
-	/*margin-right: 500px;*/
 	margin-left: 0px;
 	font-size: 10pt;
 }
@@ -78,11 +78,11 @@ figcaption {
 }
 
 #housetxt {
-	padding-left: 88px;
+	padding-left: 78px;
 }
 
 #sacktxt {
-	padding-left: 18px;
+	padding-left: 9px;
 }
 
 #error {
