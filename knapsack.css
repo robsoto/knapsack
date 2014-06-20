@@ -26,8 +26,10 @@ containers {
 }
 
 #burglar {
-	padding-left: 300px;
+	padding-right: 300px;
 	height: 100px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 #mansion {
@@ -49,6 +51,10 @@ div {
 	width: 100px;
 }
 
+#configs {
+	width: 90px;
+}
+
 #locations {
 	display: block;
 }
@@ -67,4 +73,9 @@ figcaption {
 
 #sacktxt {
 	padding-left: 150px;
+}
+
+#error {
+	width: 100px;
+	vertical-align: top;
 }

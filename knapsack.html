@@ -5,13 +5,15 @@
 		<link rel="stylesheet" type="text/css" href="knapsack.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<script>"jquery.animate_from_to-1.0.js"</script>
 		<script src="knapsack.js"></script>
 	</head>
 	
 	<body>
 		<div id="locations">
 				<img id="mansion" src="house.png">	
-				<img id="burglar" src="burglar.png">	
+				<img id="burglar" src="burglar.png">
+				<div id="error"></div>
 		</div> 
 		
 
@@ -24,23 +26,22 @@
 			
 			<div id="house">
 
-				<div class="item"><figure><img src="clock.png" data-value="175" data-weight="10" data-name="clock"><figcaption><!--$175, 10kg--></figcaption></figure></div>
+				<div class="item"><figure><img src="clock.png" data-value="175" data-weight="10" data-name="clock"><figcaption></figcaption></figure></div>
 
-				<div class="item"><figure><img src="painting.png" data-value="90" data-weight="9" data-name="painting"><figcaption><!--$90,  9kg--></figcaption></figure></div>
+				<div class="item"><figure><img src="painting.png" data-value="90" data-weight="9" data-name="painting"><figcaption></figcaption></figure></div>
 
-				<div class="item"><figure><img src="radio.png" data-value="20" data-weight="4" data-name="radio"><figcaption><!--$20, 4kg--></figcaption></figure></div>
+				<div class="item"><figure><img src="radio.png" data-value="20" data-weight="4" data-name="radio"><figcaption></figcaption></figure></div>
 
-				<div class="item"><figure><img src="vase.png" data-value="50" data-weight="2" data-name="vase"><figcaption><!--$50, 2kg--></figcaption></figure></div>
+				<div class="item"><figure><img src="vase.png" data-value="50" data-weight="2" data-name="vase"><figcaption></figcaption></figure></div>
 
-				<div class="item"><figure><img src="book.png" data-value="10" data-weight="1" data-name="book"><figcaption><!--$10, 1kg--></figcaption></figure></div>
+				<div class="item"><figure><img src="book.png" data-value="10" data-weight="1" data-name="book"><figcaption></figcaption></figure></div>
 
-				<div class="item"><figure><img src="computer.png" data-value="200" data-weight="20" data-name="computer"><figcaption><!--$200, 20kg--></figcaption></figure>
+				<div class="item"><figure><img src="computer.png" data-value="200" data-weight="20" data-name="computer"><figcaption></figcaption></figure>
 				</div>
 				
 			</div>
 
-			<div id="knapsack">
-			</div>
+			<div id="knapsack"></div>
 			
 			<div id="knapsackContents"></div>
 		</div>
