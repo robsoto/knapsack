@@ -1,9 +1,13 @@
 .containers > div {
 	display: inline-block;
 	border: 1px solid;
-	height: 300px;
-	width: 400px;
+	height: 200px;
+	width: 225px;
 	margin: 10px;
+}
+
+#knapsack {
+	margin-left: 0px;
 }
 
 .containers > * {
@@ -15,30 +19,30 @@ containers {
 }
 
 #display {
-	width: 100px;
+	width: 50px;
 	border: 0px;
 }
 
 #reset {
-	margin-top: 50px;
-	margin-left: 12px;
+	margin-top: 20px;
+	margin-left: 8px;
 	text-align: center;
 }
 
 #burglar {
-	padding-right: 300px;
-	height: 100px;
+	padding-right: 140px;
+	height: 70px;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
 
 #mansion {
-	padding-left: 250px;
-	height: 100px;
+	padding-left: 140px;
+	height: 70px;
 }
 
 img {
- 	height: 100px;
+ 	height: 50px;
 	display: inline-block;
 }
 
@@ -46,13 +50,17 @@ div {
 	display: inline-block;
 }
 
+.item {
+	height: 75px;
+	margin-bottom: 19px;
+}
+
 #knapsackContents {
 	border: 0px;
 	width: 100px;
-}
-
-#configs {
-	width: 90px;
+	margin-right: 500px;
+	margin-left: 0px;
+	font-size: 12pt;
 }
 
 #locations {
@@ -65,17 +73,26 @@ figure {
 }
 figcaption {
 	text-align: center;
+	font-size: 7pt;
 }
 
 #housetxt {
-	padding-left: 200px;
+	padding-left: 88px;
 }
 
 #sacktxt {
-	padding-left: 150px;
+	padding-left: 18px;
 }
 
 #error {
 	width: 100px;
 	vertical-align: top;
+}
+
+#instructions > span {
+	font-size: 10pt;
+}
+
+#valPerWeight {
+	margin-top: 5px
 }

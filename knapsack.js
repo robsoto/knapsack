@@ -48,7 +48,6 @@ function moveItem($elem) {
 //display the value and weight of each item
 function displayValAndWeight() {
 	var items = $('.item');
-	var images = items.find('figcaption');
 	items.each(function() {
 		var info = '$' + $(this).find('img').attr('data-value') + ', ' + $(this).find('img').attr('data-weight') + ' kg';
 		$(this).find('figcaption').text(info);
@@ -80,7 +79,7 @@ function updateKnapsack($elem) {
 		knapsackWeight -= itemWeight;
 	}
 	
-	$('#knapsackContents').text('Value: $' + knapsackValue + '\n Weight: ' + knapsackWeight + ' kg' + '\n(Limit: ' + weightLimit + ' kg)');
+	$('#knapsackContents').text('Value: $' + knapsackValue + '\nWeight: ' + knapsackWeight + ' kg\n' + '(Limit: ' + weightLimit + ' kg)');
 }
 
 //moves all items back into house
@@ -114,7 +113,7 @@ $(document).ready(function() {
 	items.attr('data-location', 'house');
 	
 	//initialize displayed information
-	$('#knapsackContents').text('Value: $' + 0 + '\n Weight: ' + 0 + ' kg' + '\n(Limit: ' + weightLimit + ' kg)');
+	$('#knapsackContents').text('Value: $' + 0 + '\nWeight: ' + 0 + ' kg\n' + '(Limit: ' + weightLimit + ' kg)');
 	displayValAndWeight();
 	
 	//change cursor on hover
