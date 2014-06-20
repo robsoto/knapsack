@@ -26,8 +26,8 @@ function moveItem($elem) {
 			$('#error').text("That's more than I can carry!")
 					   .css('color', 'red')
 					   .css('font-size', 'large')
-					   .delay(750)
-					   .fadeOut(1000, function() {
+					   //.delay(750)
+					   .fadeOut(2000, function() {
 							   	$('#error').text('');
 						})
 					   .fadeIn();
