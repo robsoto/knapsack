@@ -1,13 +1,3 @@
-/*
-	Things to add:
-		keep previous state on page refresh
-		pie chart that fills as items are added
-		display results of previous attempts
-		drag and drop
-		multiple select
-		animate transitions
-*/
-
 function validWeight($elem) {
 	var itemWeight = parseInt($elem.find('img').attr('data-weight'));
 	var newWeight = itemWeight + knapsackWeight;
