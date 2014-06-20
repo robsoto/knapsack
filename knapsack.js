@@ -121,6 +121,10 @@ $(document).ready(function() {
 		$(this).css('cursor', 'pointer');
 	});
 	
+	buttons.hover(function() {
+		$(this).css('cursor', 'pointer');
+	});
+	
 	//move items on click
 	items.click(function() {
 		moveItem($(this));
