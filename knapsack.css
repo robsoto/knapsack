@@ -58,7 +58,7 @@ div {
 #knapsackContents {
 	border: 0px;
 	width: 100px;
-	margin-right: 500px;
+	/*margin-right: 500px;*/
 	margin-left: 0px;
 	font-size: 12pt;
 }
